@@ -33,11 +33,13 @@ class GoogleAuthenticator < Formula
   end
 
   def install
-    cd 'libpam' do
+    cd 'libpam/src' do
       # I messed up with filename in a patch
       # # https://github.com/google/google-authenticator/pull/513
       inreplace 'google-authenticator.c', 'libqrencode.dylib.3', 'libqrencode.3.dylib'
+    end
 
+    cd 'libpam' do
       system './bootstrap.sh'
       system './configure', '--disable-debug', '--disable-dependency-tracking',
              '--disable-silent-rules', "--prefix=#{prefix}"
