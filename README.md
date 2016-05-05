@@ -16,8 +16,3 @@ google-authenticator --force --time-based --disallow-reuse --rate-limit=3 \
 
 See https://github.com/google/google-authenticator/tree/master/libpam
 for more information.
-
-> Caveat: As of August 2015 on Mac OS X El Capitan public beta `clang` crashes with a segfault.
-> A workaround is to install `brew install gcc`. There is no pre-brewed bottle for
-> El Capitan yet, installation can take hours.
-> (see http://stackoverflow.com/questions/24966404/brew-install-gcc-too-time-consuming)
