@@ -14,5 +14,5 @@ google-authenticator --force --time-based --disallow-reuse --rate-limit=3 \
      --rate-time=30 --window-size=10
 ```
 
-See https://github.com/google/google-authenticator/tree/master/libpam
+See https://github.com/google/google-authenticator-libpam
 for more information.
