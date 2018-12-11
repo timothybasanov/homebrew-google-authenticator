@@ -1,5 +1,8 @@
 This is not an official Google product.
 
+# This project is deprecated and should not be used
+Use `brew install google-authenticator-libpam` instead and follow the instructions.
+
 # Homebrew formula for Google Authenticator
 
 Enables Google Authenticator as a two-factor authentication
